@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import SpiritPicture from '@/assets/img/sprite_01.png';
 
 export const HeaderWrapper = styled.div`
     height: 75px;
@@ -55,7 +56,7 @@ export const HeaderLeft = styled.div`
                     content: '';
                     width: 28px;
                     height: 19px;
-                    background-image: url(${require('@/assets/img/sprite_01.png')});
+                    background-image: url(${SpiritPicture});
                     background-position: -192px 0;
                     top: 20px;
                     right: -20px;
@@ -75,7 +76,7 @@ export const HeaderLeft = styled.div`
                 bottom: -1px;
                 left: 50%;
                 transform: translate(-50%, 0);
-                background-image: url(${require("@/assets/img/sprite_01.png")});
+                background-image: url(${SpiritPicture});
                 background-position: 254px 0;
             }
         }
@@ -84,5 +85,41 @@ export const HeaderLeft = styled.div`
 `;
 
 export const HeaderRight = styled.div`
+    display: flex;
+    align-items: center;
+    color: #ccc;
+    font-size: 12px;
 
+    .search {
+        width: 160px;
+        height: 32px;
+        border-radius: 16px;
+
+        font-size: 14px;
+        font-family: '微软雅黑';
+
+        input {
+            &::placeholder {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .center {
+        width: 80px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        border: 1px solid #666;
+        border-radius: 16px;
+        margin: 0 16px;
+        background-color: transparent;
+        color: #ccc;
+
+        &:hover {
+            cursor: pointer;
+            border-color: #fff;
+            color: #fff;
+        }
+    }
 `;
