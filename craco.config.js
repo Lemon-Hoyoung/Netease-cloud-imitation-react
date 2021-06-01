@@ -7,5 +7,17 @@ module.exports = {
         alias: {
             "@": resolve("src")
         }
-    }
+    },
+    babel:{  
+        plugins: [
+          [   
+            "import", 
+            {
+              "libraryName": "antd",
+              "libraryDirectory": "es",
+               "style": 'css' //设置为true即是less
+             }
+         ]
+        ]
+     }
 }

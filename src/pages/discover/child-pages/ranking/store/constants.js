@@ -1,0 +1,4 @@
+export const CHANGE_RANK_TYPES = 'CHANGE_RANK_TYPES';
+export const CHANGE_RANK_LIST = 'CHANGE_RANK_LIST';
+
+export const UP_SPEED_LIST = "19723756";

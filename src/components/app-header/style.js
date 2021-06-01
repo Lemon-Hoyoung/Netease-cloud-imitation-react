@@ -95,8 +95,12 @@ export const HeaderRight = styled.div`
         height: 32px;
         border-radius: 16px;
 
-        font-size: 14px;
+        font-size: 12px;
         font-family: '微软雅黑';
+
+        .ant-input {
+            font-size: 12px;
+        }
 
         input {
             &::placeholder {

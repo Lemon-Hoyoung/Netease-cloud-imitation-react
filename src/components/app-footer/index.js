@@ -16,7 +16,7 @@ export default memo(function HYAppFooter() {
                     {FooterLinks.map((item, index) => {
                         return (
                             <Fragment key={item.title}>
-                                <a href={item.link}>{item.title}</a>
+                                <a href={item.link} target="blank">{item.title}</a>
                                 <span className="line">|</span>
                             </Fragment>
                         )
@@ -49,8 +49,8 @@ export default memo(function HYAppFooter() {
                 {FooterImages.map((item, index) => {
                     return (
                         <li key={item.title} className="item">
-                            <a href={item.link}> </a>
-                            <span>{item.title}</span>
+                            <a href={item.link} className="link" target="blank"> </a>
+                            <span className="title"></span>
                         </li>
                     )
                 })}

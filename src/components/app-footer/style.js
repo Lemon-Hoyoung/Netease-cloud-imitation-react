@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import FooterPicture from '@/assets/img/footer_enter_new.png'
+import FooterPicture from '@/assets/img/foot_enter_new.png';
+import FooterPicture2 from '@/assets/img/foot_enter_tt.png'
 
 export const FooterWrapper = styled.div`
     width: 100%;
@@ -45,58 +46,70 @@ export const FooterRightWrapper = styled.ul`
     .item {
         display: flex;
         flex-direction: column;
-        margin-right: 40px;
+        margin-right: 20px;
 
         .link {
             display: block;
-            width: 50px;
+            width: 47px;
             height: 45px;
-            background-image: url(${require('@/assets/img/sprite_footer_02.png')});
-            background-size: 110px 450px;
+            background-image: url(${FooterPicture});
+            background-size: 110px 552px;
         }
 
         :nth-child(1) .link {
-            background-position: -60px -101px;
+            background-position: -63px -456.5px;
         }
 
         :nth-child(2) .link {
-            background-position: 0 0;
+            background-position: -63px -101px;
         }
 
         :nth-child(3) .link {
-            background-position: -60px -50px;
+            background-position: 0 0;
         }
 
         :nth-child(4) .link {
+            background-position: -63px -50px;
+        }
+
+        :nth-child(5) .link {
             background-position: 0 -101px;
         }
 
         .title {
             margin-top: 5px;
             display: block;
-            width: 52px;
-            height: 10px;
-            background-image: url(${require('@/assets/img/sprite_footer_01.png')});
-            background-size: 180px 100px;
+            width: 72px;
+            height: 14px;
+            background-image: url(${FooterPicture2});
+            background-size: 180px 139px;
         }
 
         :nth-child(1) .title {
-            background-position: -1px -90px;
+            background-position: 0 -108px;
+            margin-top: 6px;
+            margin-left: -10px
         }
 
         :nth-child(2) .title {
-            background-position: 0 0;
+            background-position: -1px -91px;
             margin-top: 7px;
         }
 
         :nth-child(3) .title {
-            background-position: 0 -54px;
+            background-position: 0 0;
             margin-top: 6px;
         }
 
         :nth-child(4) .title {
-            background-position: -1px -72px;
+            background-position: 0 -54px;
             margin-top: 6px;
+            margin-left: -2px
+        }
+
+        :nth-child(5) .title {
+            background-position: -1px -72px;
+            margin-top:6px;
         }
     }
 `;

@@ -69,7 +69,6 @@ img {
   vertical-align: middle;
 }
 
-全局样式
 body,
 textarea,
 select,
@@ -79,6 +78,10 @@ button {
   color: #333;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f5f5f5;
+}
+
+body {
+  overflow: overlay;
 }
 
 .text-nowrap {
@@ -164,6 +167,22 @@ button {
   background: url(../img/playbar_sprite.png) no-repeat 0 9999px;
 }
 
+.sprite_download {
+  background: url(../img/sprite_download.png) no-repeat 0 9999px;
+}
+
+.progress_bar {
+  background: url(../img/progress_bar.png) no-repeat 0 9999px;
+}
+
+.playlist_bg {
+  background: url(../img/playlist_bg.png) no-repeat 0 9999px;
+}
+
+.playlist_icon {
+  background: url(../img/playlist.png) no-repeat 0 9999px;
+}
+
 .lyric-css .ant-message-notice-content {
   position: fixed;
   left: 50%;
@@ -187,4 +206,24 @@ button {
 
 .theme-logo {
   background: url(../img/logo.png) repeat 0 9999px;;
+}
+
+.forgeA:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.expect {
+  background: url(../img/expect.png) repeat 0 9999px; 
+}
+
+.edgeHiddenScroll {
+  /*隐藏滚动条，当IE下溢出，仍然可以滚动*/
+  -ms-overflow-style:none;
+  /*火狐下隐藏滚动条*/
+  overflow:-moz-scrollbars-none;
+}
+
+.firefoxHiddenScroll {
+  scrollbar-width: none;
 }
